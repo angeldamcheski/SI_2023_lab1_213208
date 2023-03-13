@@ -1,0 +1,323 @@
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208
+$ git init
+Initialized empty Git repository in C:/Users/damch/OneDrive/Desktop/SI_2023_lab1_213208/.git/
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git remote add origin https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ touch README.md
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git add README.md
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git commit -m "Initial commit"
+[master (root-commit) 94c316b] Initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ touch SILab1.java
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SILab1.java
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git add SILab1.java
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git commit -m "Add java class"
+[master 81d83bd] Add java class
+ 1 file changed, 41 insertions(+)
+ create mode 100644 SILab1.java
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git push origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 829 bytes | 414.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+ * [new branch]      master -> master
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git branch bug1
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git branch bug2
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git branch bug3
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git branch
+  bug1
+  bug2
+  bug3
+* master
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug1)
+$ git status
+On branch bug1
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug1)
+$ git add SILab1.java
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug1)
+$ git commit -m "Fix wrong loop for reading"
+[bug1 5136bff] Fix wrong loop for reading
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug2)
+$ git status
+On branch bug2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+g
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug2)
+$ git add SILab1.java
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug2)
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+[bug2 8591375] Fix wrong condition in filterOddNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug2)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git status
+On branch bug3
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git add SILab1.java
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git commit -m "Fix method sumEvenNumbers"
+[bug3 0bceb13] Fix method sumEvenNumbers
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git push origin --all
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 812 bytes | 406.00 KiB/s, done.
+Total 9 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 1 local object.
+To https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+ * [new branch]      bug1 -> bug1
+ * [new branch]      bug2 -> bug2
+ * [new branch]      bug3 -> bug3
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git checkout master
+Switched to branch 'master'
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git merge bug1
+Updating 81d83bd..5136bff
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git push origin --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+   81d83bd..5136bff  master -> master
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git pull origin
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git pull origin --all
+fatal: fetch --all does not take a repository argument
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git merge bug2
+Auto-merging SILab1.java
+Merge made by the 'ort' strategy.
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git push origin --all
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 357 bytes | 357.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+   5136bff..42be6d0  master -> master
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git checkout bug3
+Switched to branch 'bug3'
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git rebase master
+Successfully rebased and updated refs/heads/bug3.
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (bug3)
+$ git checkout master
+Switched to branch 'master'
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git merge bug3
+Updating 42be6d0..a047a20
+Fast-forward
+ SILab1.java | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git push origin --all
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 332 bytes | 332.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+   42be6d0..a047a20  master -> master
+ ! [rejected]        bug3 -> bug3 (non-fast-forward)
+error: failed to push some refs to 'https://github.com/angeldamcheski/SI_2023_lab1_213208.git'
+hint: Updates were rejected because a pushed branch tip is behind its remote
+hint: counterpart. Check out this branch and integrate the remote changes
+hint: (e.g. 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git push --force origin --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/angeldamcheski/SI_2023_lab1_213208.git
+ + 0bceb13...a047a20 bug3 -> bug3 (forced update)
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ touch logs.txt
+
+damch@LAPTOP-5VQBR7R0 MINGW64 ~/OneDrive/Desktop/SI_2023_lab1_213208 (master)
+$ git log
+commit a047a20f2f49605982ea4949f68191d48fc95269 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:32:06 2023 +0100
+
+    Fix method sumEvenNumbers
+
+commit 42be6d015f3e257dc5016772228db9fa5a3bd50c
+Merge: 5136bff 8591375
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:33:06 2023 +0100
+
+    Merge branch 'bug2'
+
+commit 8591375cecf9ccea3e973fccfccae4f162845240 (origin/bug2, bug2)
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:31:09 2023 +0100
+
+    Fix wrong condition in filterOddNumbers
+
+commit 5136bffe6936f4dd2a297a51572693f6474472ef (origin/bug1, bug1)
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:30:23 2023 +0100
+:...skipping...
+commit a047a20f2f49605982ea4949f68191d48fc95269 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:32:06 2023 +0100
+
+    Fix method sumEvenNumbers
+
+commit 42be6d015f3e257dc5016772228db9fa5a3bd50c
+Merge: 5136bff 8591375
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:33:06 2023 +0100
+
+    Merge branch 'bug2'
+
+commit 8591375cecf9ccea3e973fccfccae4f162845240 (origin/bug2, bug2)
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:31:09 2023 +0100
+
+    Fix wrong condition in filterOddNumbers
+
+commit 5136bffe6936f4dd2a297a51572693f6474472ef (origin/bug1, bug1)
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:30:23 2023 +0100
+
+    Fix wrong loop for reading
+
+commit 81d83bd9058e21e82ff8dc1e57c293f5de82a64f
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:29:08 2023 +0100
+
+    Add java class
+
+commit 94c316bf4bc6440ce6dbc5decef4aa5d6f6badfd
+Author: angeldamcheski <damcheskiangel911@gmail.com>
+Date:   Mon Mar 13 16:28:26 2023 +0100
+
+    Initial commit
